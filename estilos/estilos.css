@@ -1,0 +1,266 @@
+/*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* ESTILOS GRENERALES -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../assets/img/fondo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+body{
+    margin: auto;
+    background-color: #f5b08b;
+}
+
+/*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-* LOGO -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+.logo{
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: all 0.4s;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- MENU DE NAVEGACIÓN -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+.navigationBar{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.navigationBarlist{
+    list-style-type: none;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-right: 30px;
+}
+
+.enlace{
+    text-decoration: none;
+    color: #5A3A29;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    position: relative;
+    padding: 15px 0;
+    transition: color 0.3s ease;
+}
+
+.enlace::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: blanchedalmond;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.enlace:hover{
+    color: blanchedalmond;
+}
+
+.enlace:hover::after{
+    width: 100%;
+}
+.active{
+    color: black;
+
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*FOOTER-*-*-*-*-*-*-*-*-*/
+
+footer {
+    background-color: #5A3A29;
+    padding: 30px 0; /* Esto separa todo el contenido de los bordes del footer */
+    display: flex; /* Convierte el footer en un contenedor flexible */
+    justify-content: space-between; /* Empuja un bloque a la izquierda y otro a la derecha */
+    align-items: center; /* Centra los elementos verticalmente */
+    width: 100%;
+}
+
+.redes {
+    width: 30%; /* Bajamos el ancho para que no choquen */
+    display: flex;
+    flex-direction: column; /* Cambiado a row para que los iconos estén en línea */
+    gap: 15px; /* Espacio uniforme entre iconos */
+    text-align: center;
+}
+
+.redes img {
+    width: 30px;
+    transition: transform 0.2s, filter 0.2s;
+    cursor: pointer;
+}
+
+.redes img:hover {
+    transform: scale(1.3) translateY(-5px); /* Se hace grande y sube un poco */
+    filter: brightness(1.2); /* Brilla un poco al pasar el ratón */
+}
+
+.info {
+    width: 30%; /* Ancho suficiente para la información */
+    display: flex;
+    flex-direction: column; /* Texto uno debajo de otro */
+    text-align: center; /* Alinea el texto a la derecha */
+    color: white; /* Para que se lea sobre el fondo café */
+    border-left: 1.5px solid black;
+    border-right: 1.5px solid black;
+    padding: 25px;
+    font-size: 1.1em;
+    font-family: sans-serif;
+}
+
+.aviso {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aviso a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    transition: color 0.3s ease;
+    position: relative;
+    padding: 15px 0;
+}
+
+.aviso a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: blanchedalmond;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.aviso a:hover{
+    color: blanchedalmond;
+}
+
+.aviso a:hover::after{
+    width: 100%;
+}
+
+/*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* ESTILOS DEL INDEX -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+main{
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+section{
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    background-color: #af846d;
+    border-radius: 6px;
+}
+
+h1, h2, h3{
+    margin-bottom: 30px;
+    color: #2f5d50;
+    text-align: center;
+}
+
+p{
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-family: sans-serif;
+}
+
+#inicio h1{
+    margin-bottom: 40px;
+}
+
+#inicio .contenido-inicio{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#inicio .texto-inicio{
+    flex: 1;
+}
+
+#inicio img{
+    flex: 1;
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.servicios-contenedor{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.servicio{
+    flex: 1 1 220px;
+    background-color: #eef3f1;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+#compromiso p{
+    text-align: center;
+    background-color: #eef3f1;
+    border-radius: 30px;
+}
+
+.valores{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.valor{
+    flex: 1 1 220px;
+    background-color: #eef3f1;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+@media (max-width: 768px){
+    #inicio .contenido-inicio{
+        flex-direction: column;
+        text-align: center;
+    }
+    section{
+        padding: 40px 15px;
+    }
+    h1{
+        font-size: 1.8em;
+    }
+    h2{
+        font-size: 1.8em;
+    }
+}
