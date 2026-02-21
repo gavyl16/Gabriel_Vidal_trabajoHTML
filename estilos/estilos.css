@@ -19,7 +19,8 @@ header{
 
 body{
     margin: 0;
-    background-color: #f5f5f5;
+    background-color: #fdf5eb;
+    color: #333;
 }
 
 @media (max-width: 768px) {
@@ -43,9 +44,7 @@ body{
 
 /*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-* LOGO -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 .logo{
-    margin-left: 30px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px 30px;
     transition: all 0.4s;
     filter: grayscale(100%);
     cursor: pointer;
@@ -243,10 +242,11 @@ main{
 }
 
 section{
-    padding: 60px 20px;
+    padding: 80px 40px;
     margin-bottom: 40px;
-    background-color: #af846d;
-    border-radius: 6px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(90, 58, 41, 0.1);
 }
 
 h1, h2, h3{
@@ -273,6 +273,7 @@ p{
 
 #inicio .texto-inicio{
     flex: 1;
+    
 }
 
 #inicio img{
@@ -292,7 +293,7 @@ p{
 #inicio a:hover{
     transform: scale(1.1);
     filter: opacity(0%);
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
 }
 
 .servicios-contenedor{
@@ -378,7 +379,7 @@ p{
 
 .galeria-item:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 /*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
@@ -406,8 +407,8 @@ p{
 .campo input,
 .campo textarea {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
     font-size: 1em;
 }
 
@@ -428,7 +429,7 @@ button {
     background-color: #5A3A29;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 1em;
     transition: background-color 0.3s ease;
