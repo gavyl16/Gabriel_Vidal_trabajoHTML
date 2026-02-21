@@ -449,10 +449,18 @@ button:hover {
     margin-top: 40px;
 }
 
-.mapa img {
+.mapa{
     width: 100%;
-    max-width: 500px;
-    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 15px; 
+    overflow: hidden;    
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.mapa iframe {
+    width: 100%;
+    display: block;
 }
 
 .datos-contacto {
