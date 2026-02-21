@@ -18,8 +18,27 @@ header{
 }
 
 body{
-    margin: auto;
-    background-color: #f4c58d;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Apila logo y menú verticalmente */
+        height: auto; /* Permite que crezca según el contenido */
+    }
+
+    .navigationBarlist {
+        flex-direction: column; /* Enlaces uno debajo de otro */
+        gap: 15px;
+        margin-right: 0; /* Centra el menú */
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .logo {
+        margin: 10px 0; /* Centra el logo arriba */
+    }
 }
 
 /*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-* LOGO -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
@@ -89,6 +108,28 @@ body{
 .active{
     color: black;
 
+}
+@media (max-width: 768px) {
+    .navigationBarlist {
+        display: flex;
+        flex-direction: row; /* Aseguramos que sigan en fila */
+        flex-wrap: wrap;     /* Pero que permitan saltar de línea */
+        justify-content: center; 
+        gap: 10px;           /* Reducimos el espacio para que quepan dos */
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .navigationBarlist li {
+        /* El truco: cada item ocupa casi el 50% del ancho */
+        flex: 0 1 calc(50% - 20px); 
+        text-align: center;
+    }
+
+    .enlace {
+        font-size: 1.1em; /* Reducimos un poco el tamaño para que no se amontone */
+    }
 }
 
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*FOOTER-*-*-*-*-*-*-*-*-*/
@@ -172,6 +213,25 @@ footer {
     width: 100%;
 }
 
+@media (max-width: 768px) {
+    /* Reducimos el texto de la información (dirección, nombre empresa) */
+    .info p {
+        font-size: 0.9em; /* Bajamos de 1.1em a 0.9em */
+        margin-bottom: 10px;
+    }
+
+    /* Reducimos el enlace del aviso legal */
+    .aviso a {
+        font-size: 0.9em;
+        padding: 10px 0; /* Reducimos el padding para que no ocupe tanto alto */
+    }
+
+    /* Opcional: reducimos los iconos para que no dominen tanto espacio */
+    .redes img {
+        width: 25px;
+    }
+}
+
 /*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* ESTILOS DEL INDEX -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
@@ -218,6 +278,7 @@ p{
 #inicio img{
     margin: 20px;
     flex: 1;
+    width: 80%;
     max-width: 100%;
     border-radius: 6px;
 }
@@ -245,6 +306,7 @@ p{
     background-color: #eef3f1;
     padding: 20px;
     border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
 }
 
 #compromiso p{
@@ -264,6 +326,7 @@ p{
     background-color: #eef3f1;
     padding: 20px;
     border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px){
