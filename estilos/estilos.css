@@ -23,20 +23,20 @@ body{
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Apila logo y menú verticalmente */
-        height: auto; /* Permite que crezca según el contenido */
+        flex-direction: column; 
+        height: auto; 
     }
 
     .navigationBarlist {
-        flex-direction: column; /* Enlaces uno debajo de otro */
+        flex-direction: column; 
         gap: 15px;
-        margin-right: 0; /* Centra el menú */
+        margin-right: 0;
         padding: 10px 0;
         text-align: center;
     }
 
     .logo {
-        margin: 10px 0; /* Centra el logo arriba */
+        margin: 10px 0; 
     }
 }
 
@@ -103,29 +103,28 @@ body{
     width: 100%;
 }
 .active{
-    color: black;
+    color: #ffffff;
 
 }
 @media (max-width: 768px) {
     .navigationBarlist {
         display: flex;
-        flex-direction: row; /* Aseguramos que sigan en fila */
-        flex-wrap: wrap;     /* Pero que permitan saltar de línea */
+        flex-direction: row; 
+        flex-wrap: wrap;     
         justify-content: center; 
-        gap: 10px;           /* Reducimos el espacio para que quepan dos */
+        gap: 10px;
         padding: 0;
         margin: 0 auto;
         width: 100%;
     }
 
     .navigationBarlist li {
-        /* El truco: cada item ocupa casi el 50% del ancho */
         flex: 0 1 calc(50% - 20px); 
         text-align: center;
     }
 
     .enlace {
-        font-size: 1.1em; /* Reducimos un poco el tamaño para que no se amontone */
+        font-size: 1.1em; 
     }
 }
 
@@ -133,18 +132,18 @@ body{
 
 footer {
     background-color: #5A3A29;
-    padding: 30px 0; /* Esto separa todo el contenido de los bordes del footer */
-    display: flex; /* Convierte el footer en un contenedor flexible */
-    justify-content: space-between; /* Empuja un bloque a la izquierda y otro a la derecha */
-    align-items: center; /* Centra los elementos verticalmente */
+    padding: 30px 0; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
     width: 100%;
 }
 
 .redes {
-    width: 30%; /* Bajamos el ancho para que no choquen */
+    width: 30%; 
     display: flex;
-    flex-direction: column; /* Cambiado a row para que los iconos estén en línea */
-    gap: 15px; /* Espacio uniforme entre iconos */
+    flex-direction: column; 
+    gap: 15px; 
     text-align: center;
 }
 
@@ -155,16 +154,15 @@ footer {
 }
 
 .redes img:hover {
-    transform: scale(1.3) translateY(-5px); /* Se hace grande y sube un poco */
-    filter: brightness(1.2); /* Brilla un poco al pasar el ratón */
+    transform: scale(1.3) translateY(-5px);  
 }
 
 .info {
-    width: 30%; /* Ancho suficiente para la información */
+    width: 30%; 
     display: flex;
-    flex-direction: column; /* Texto uno debajo de otro */
-    text-align: center; /* Alinea el texto a la derecha */
-    color: white; /* Para que se lea sobre el fondo café */
+    flex-direction: column; 
+    text-align: center; 
+    color: white; 
     border-left: 1.5px solid black;
     border-right: 1.5px solid black;
     padding: 25px;
@@ -211,19 +209,17 @@ footer {
 }
 
 @media (max-width: 768px) {
-    /* Reducimos el texto de la información (dirección, nombre empresa) */
     .info p {
-        font-size: 0.9em; /* Bajamos de 1.1em a 0.9em */
+        font-size: 0.9em; 
         margin-bottom: 10px;
     }
 
-    /* Reducimos el enlace del aviso legal */
     .aviso a {
         font-size: 0.9em;
-        padding: 10px 0; /* Reducimos el padding para que no ocupe tanto alto */
+        padding: 10px 0;
     }
 
-    /* Opcional: reducimos los iconos para que no dominen tanto espacio */
+    
     .redes img {
         width: 25px;
     }
@@ -471,7 +467,6 @@ button:hover {
     margin-bottom: 20px;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
 
     .contacto-contenedor {
