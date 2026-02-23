@@ -40,11 +40,11 @@
     <main>
         <section>
             <h1>Solicita tu presupuesto</h1>
-            <form action="./presupuestos.html" method="post" class="formulario">
+            <form action="./presupuestos.html" method="get" class="formulario">
                 <!-- Nombre -->
                 <div class="campo">
                     <label for="nombre"><strong>Nombre</strong></label>
-                    <input type="text" id="nombre" name="nombre" required minlength="3"placeholder="Introduce tu nombre completo">
+                    <input type="text" id="nombre" name="nombre" required minlength="3" placeholder="Introduce tu nombre completo">
                 </div>
 
                 <!-- Email -->
@@ -55,7 +55,7 @@
                 <!-- Teléfono -->
                 <div class="campo">
                     <label for="telefono"><strong>Teléfono</strong></label>
-                    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}"placeholder="123456789">
+                    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}" placeholder="123456789">
                 </div>
                 <!-- Más información -->
                 <div class="campo">
